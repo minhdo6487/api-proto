@@ -1,0 +1,8 @@
+GET https://devel.golfconnect24.com/api/golfcourse/27/subgolfcourse
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-01-15T124220.200.json
+
+###
+

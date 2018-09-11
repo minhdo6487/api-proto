@@ -1,0 +1,40 @@
+from django.conf.urls import patterns, include, url
+from django.contrib import admin
+
+admin.autodiscover()
+
+urlpatterns = patterns('',
+                       url(r'', include('api.golfcourseeventMana.urls')),
+                       url(r'', include('api.teetimeMana.urls')),
+                       url(r'', include('api.bookingMana.urls')),
+                       url(r'', include('api.gameMana.urls')),
+                       url(r'', include('api.golfcourseMana.urls')),
+                       url(r'', include('api.postMana.urls')),
+                       url(r'', include('api.likeMana.urls')),
+                       url(r'', include('api.commentMana.urls')),
+                       url(r'', include('api.friendMana.urls')),
+                       url(r'', include('api.userMana.urls')),
+                       url(r'', include('api.authMana.urls')),
+                       url(r'', include('api.locationMana.urls')),
+                       url(r'', include('api.educationMana.urls')),
+                       url(r'', include('api.businessMana.urls')),
+                       url(r'', include('api.buggyMana.urls')),
+                       url(r'', include('api.checkinMana.urls')),
+                       url(r'', include('api.customerMana.urls')),
+                       url(r'', include('api.advertiseMana.urls')),
+                       url(r'', include('api.noticeMana.urls')),
+                       url(r'', include('api.messageMana.urls')),
+                       url(r'', include('api.clubsetMana.urls')),
+                       url(r'', include('api.analyticMana.urls')),
+                       url(r'', include('api.inviteMana.urls')),
+                       url(r'', include('api.forumMana.urls')),
+                       url(r'', include('api.socialMana.urls')),
+                       url(r'', include('api.galleryMana.urls')),
+                       url(r'', include('api.dealMana.urls')),
+                       url(r'', include('api.realtimeMana.urls')),
+                       url(r'', include('api.playstayMana.urls')),
+                       url(r'', include('api.dashboardMana.urls')),
+
+                       url(r'^test', include('api.mytest.urls')),
+                       url(r'', include('api.core_api.urls')),
+                       )
